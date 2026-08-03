@@ -453,9 +453,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.3 \
     vendor.qti.hardware.vpp@2.0 \
     btaudio_offload_if \
-    audio.primary.lahaina \
+    audio.primary.redwood \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
-    liba2dpoffload \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -490,7 +489,6 @@ PRODUCT_PACKAGES += \
     libqtigef \
     libresampler \
     libsndmonitor \
-    libssrec \
     libvideoNS \
     libasphere \
     libshoebox \
@@ -1067,6 +1065,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal@1.0 \
     vendor.qti.imsrtpservice@3.0 \
     vendor.qti.imsrtpservice@3.1 \
+    liba2dpoffload_odm \
+    libssrec_odm \
     CACertService \
     CneApp \
     IWlanService \
