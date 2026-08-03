@@ -10362,23 +10362,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.radio.atcmdfwd@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so"],
-			shared_libs: [ ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.radio.ims@1.0",
 	owner: "xiaomi",
 	strip: {
@@ -12110,14 +12093,6 @@ prebuilt_etc_xml {
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-sh_binary {
-	name: "ATFWD-daemon",
-	owner: "xiaomi",
-	src: "proprietary/vendor/bin/ATFWD-daemon",
-	filename: "ATFWD-daemon",
 	soc_specific: true,
 }
 
