@@ -5197,24 +5197,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "consumerir.lahaina",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		: {
-			srcs: ["proprietary/vendor/lib64/hw/consumerir.lahaina.so"],
-			shared_libs: [ ],
-		},
-	},
-	compile_multilib: "64",
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "fingerprint.goodix.default",
 	owner: "xiaomi",
 	strip: {
@@ -12250,6 +12232,7 @@ android_app_import {
 	name: "CneApp",
 	owner: "xiaomi",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	required: ["CneApp.libvndfwk_detect_jni.qti_symlink"],
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
